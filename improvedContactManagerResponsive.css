@@ -1,0 +1,75 @@
+@media screen and (min-width: 600px) {
+
+    #mainContainer {
+        width: 70%;
+    }
+
+    #homePage {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    #loadContactsHome {
+        border: 2px solid #a8dadc;
+        border-right: none;
+        margin: auto;
+        color: #a8dadc
+    }
+
+    #loadContactsHome:hover {
+        border: 4px solid #a8dadc;
+        border-right: none;
+        cursor: pointer;
+    }
+    
+    #addContactHome {
+        border: 2px solid #a8dadc;
+        border-left: none;
+        margin: auto;
+        color: #a8dadc
+    }
+
+    #addContactHome:hover {
+        border: 4px solid #a8dadc;
+        border-left: none;
+        cursor: pointer;
+    }
+
+    #listHeaderTitle {
+        width: 40%;
+    }
+
+    #listHeaderButtonDiv {
+        justify-content: space-around;
+    }
+
+    #loadButtonList, #addContactButtonList {
+        width: 28%;
+    }
+
+    #searchInputLabel {
+        width: 20%;
+        margin: auto;
+    }
+
+    #searchInput {
+        width: 80%
+    }
+
+    #sortSummary {
+        width: 20%;
+        margin: auto;
+    }
+
+    #sortButtonsDiv {
+        margin: auto;
+        width: 70%;
+    }
+
+    #contactList > button {
+        width: 20%;
+        margin-left: 20%;
+    }
+
+}

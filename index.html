@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Contact Manager</title>
+    <link rel="stylesheet" href="improvedContactManager.css">
+    <link rel="stylesheet" href="improvedContactManagerResponsive.css">
+    <script src="improvedContactManager.js"></script>
+</head>
+<body>
+<header>
+    <h1>Improved <br>Contact <br>Manager</h1>
+    <h2>by Jjo</h2>
+</header>
+<main>
+    <div id= "mainContainer"></div>
+    <section id= "homePage">
+        <button id= "loadContactsHome"><h2>Load Saved Contacts</h2></button>
+        <button id= "addContactHome"><h2>Add New Contact</h2></button>
+    </section>
+
+    <form id="manager">
+        <fieldset>
+            <legend id="inputSectionLegend">New contact's information</legend>
+            <section id="inputSection">
+                <label for="nameInput" class="inputLabels">Name</label>
+                <br>
+                <input id="nameInput" class="inputs"></input>
+                <br>
+                <label for="familyNameInput" class="inputLabels">Family Name</label>
+                <br>
+                <input id="familyNameInput" class="inputs"></input>
+                <br>
+                <label for="phoneNumberInput" class="inputLabels">Phone Number</label>
+                <br>
+                <input id="phoneNumberInput" class="inputs" type="tel"></input>
+                <br>
+                <label for="emailInput" class="inputLabels">email</label>
+                <br>
+                <input type="email" id="emailInput" class="inputs"></input>
+                <br>
+            </section>
+            <section id="addContactSection">
+                <button type="button" id="addContactButton">Add Contact</button>        
+                <button id="contactListButton" type="button">Show Contact List</button>              
+            </section>
+        </fieldset>
+    </form>  
+    <section id="contactListSection">
+        <div id="listHeaderDiv">
+            <section id="newContactConfirm">CONTACT ADDED</section>
+            <p id="listHeaderTitle">My Contacts<span id="contactsAmountSpan"></span></p>
+            <div id="listHeaderButtonDiv">
+                <button id="loadButtonList" type="button">Load saved contacts</button>
+                <button id="addContactButtonList">Add New Contact</button>
+            </div>
+            <br>
+            <label id="searchInputLabel" for="searchInput">Search
+                <input id="searchInput" type="text" placeholder="Name"></input>
+            </label>
+            <details>
+                <summary id= "sortSummary">Sort</summary>
+                <div id="sortButtonsDiv">
+                    <button id="sortAZButton" type="button">Name</button>
+                    <button id="sortTelButton" type="button">Tel</button>
+                    <button id="sortEmailButton" type="button">Email</button>
+                </div>
+            </details>
+        </div>
+        <div id="listBodyDiv">
+            <ul id="contactList"></ul>
+        </div>
+    </section>
+</main>
+
+    
+</body>
+</html>

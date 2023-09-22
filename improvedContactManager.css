@@ -1,0 +1,307 @@
+body {
+    background-color: #4F6D7A;
+}
+
+header {
+    display: flex;
+    line-height: 1.4rem;
+}
+
+header > h2 {
+    margin-top: 2.5rem;
+}
+
+#mainContainer {
+    border-radius: 20px;
+    margin: auto;
+    width: 80%;
+    height: 35rem;
+}
+
+#homePage {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+#loadContactsHome {
+    border: 2px solid #a8dadc;
+    border-bottom: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 49.5%;
+    background-color: #4F6D7A;
+}
+
+#loadContactsHome:hover {
+    border: 4px solid #a8dadc;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+#addContactHome {
+    border: 2px solid #a8dadc;
+    border-top: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 49.5%;
+    background-color: #4F6D7A;
+}
+
+#addContactHome:hover {
+    border: 4px solid #a8dadc;
+    border-top: none;
+    cursor: pointer;
+}
+
+#manager {
+    border: 5px solid #a8dadc;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: .3rem;
+    width: 100%;
+    height: 100%;
+    background-color: #4F6D7A;
+    font-size: large;
+    display: none;
+}
+
+#manager > fieldset {
+    border-radius: 20px;
+    height: 23rem;
+    text-align: center;
+}
+
+#manager > fieldset > legend {
+    border-radius: 20px;
+    padding: .3rem;
+    margin-bottom: 1rem;
+    background-color: #4F6D7A;
+    color: #a8dadF;
+}
+
+.inputLabels {
+    border: 2px solid #a8dadF;
+    border-radius: 10px 10px 0px 0px;
+    padding: .2rem 1rem .2rem 1rem;
+    color: #a8dadF;
+}
+
+.inputs {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#addContactButton {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border: 5px solid #166088;
+    border-radius: 20px;
+    background-color: #a8dadF;
+    width: 50%;
+    height: 4rem;
+    opacity: 0;
+}
+
+#addContactButton:hover {
+    background-color: #166088;
+    color: white; 
+    cursor: pointer;  
+}
+
+#newContactConfirm {
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 60%;
+    background-color: #a8dadF;
+    text-align: center;
+    opacity: 0;
+}
+
+#contactListButton {
+    border: 5px solid #166088;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 2rem;
+    width: 50%;
+    height: 4rem;
+    background-color: #a8dadF;
+    display: block;
+}
+
+#contactListButton:hover {
+    background-color: #166088;
+    color: white;   
+    cursor: pointer;
+}
+
+#contactListSection {
+    margin: auto;
+    border: 5px solid #a8dadc;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #4F6D7A;
+    display: none;
+}
+
+#listHeaderDiv {
+    border-bottom: 2px solid #a8dadc;
+    display: flex;
+    flex-flow: column;
+    min-height: 38%; 
+}
+
+#listHeaderTitle {
+    border: 2px solid #a8dadF;
+    margin: auto;
+    margin-top: 0;
+    width: 70%;
+    height: 2.5rem;
+    text-align: center;
+    color: #a8dadF;
+}
+
+#listHeaderButtonDiv {
+    margin-bottom: 1rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#loadButtonList {
+    border: 5px solid #166088;
+    border-radius: 20px;
+    width: 49%;
+    background-color: #a8dadF;
+}
+
+#loadButtonList:hover {
+    background-color: #166088;
+    color: white;   
+    cursor: pointer;
+}
+
+#addContactButtonList {
+    border: 5px solid #166088;
+    border-radius: 20px;
+    width: 49%;
+    background-color: #a8dadF;
+}
+
+#addContactButtonList:hover {
+    background-color: #166088;
+    color: white;   
+    cursor: pointer;
+}
+
+#searchInput {
+    width: 70%
+}
+
+#searchInputLabel {
+    margin-left: 10%;
+    margin-bottom: 1rem;
+    width: 80%;
+    border: 2px solid #a8dadc;
+    color: #a8dadc;
+    text-align: center;
+}
+
+#sortSummary {
+    border: 2px solid #a8dadc;
+    border-radius: 20px;
+    margin-left: 35%;
+    margin-bottom: .2rem;
+    width: 30%;
+    color: #a8dadc;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sortButtonsDiv {
+    display: flex;
+    justify-content: space-around;
+}
+
+#sortAZButton {
+    border: 2px solid #a8dadc;
+    border-radius: 20px;
+    width: 31%;
+    background-color: #4F6D7A;
+    color: #a8dadc;
+    cursor: pointer;
+}
+
+#sortTelButton {
+    border: 2px solid #a8dadc;
+    border-radius: 20px;
+    width: 31%;
+    background-color: #4F6D7A;
+    color: #a8dadc;
+    cursor: pointer;
+}
+
+#sortEmailButton {
+    border: 2px solid #a8dadc;
+    border-radius: 20px;
+    width: 31%;
+    background-color: #4F6D7A;
+    color: #a8dadc;
+    cursor: pointer;
+}
+
+#listBodyDiv {
+    height: 62%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+li {
+    margin-top: 0;
+    padding-left: 1rem;
+    border-radius: 10px 0px 0px 10px;
+    border-bottom: 1px solid #166088;
+    background-color: #a8dadc;
+}
+
+li > input {
+    margin-top: .3rem;
+    display: block;
+}
+
+li > button {
+    border: 5px solid #166088;
+    border-radius: 20px;
+    margin-left: 70%;
+    width: 20%;
+    background-color: #a8dadF;
+    cursor: pointer;
+}
+
+li > button:hover {
+    background-color: #166088;
+    color: white;   
+}
+
+#contactList > button {
+    border: 5px solid #166088;
+    border-top: 0;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: 0;
+    margin-bottom: .3rem;
+    margin-left: 6.3%;
+    width: 40%;
+    background-color: #a8dadF;
+}
+
+#contactList > button:hover {
+    background-color: #166088;
+    color: white;   
+    cursor: pointer;
+}

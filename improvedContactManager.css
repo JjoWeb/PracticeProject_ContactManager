@@ -1,15 +1,83 @@
 body {
-    background-color: #4F6D7A;
+    background-color: #4f6d7a;
 }
 
-header {
-    display: flex;
-    line-height: 1.4rem;
+/*
+BEGINNING CUSTOM HEADER STENCIL SECTION
+*/
+#header_stencil_main {
+    width: 12.5rem;
 }
 
-header > h2 {
-    margin-top: 2.5rem;
+#header_stencil_titleAndSignature {
+    border: solid black;
+    border-radius: 0% 0% 100% 0%;
+    background-color: rgba(0, 0, 0, 1);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
+
+#header_stencil_title {
+    color: white;
+    line-height: 1.7rem;
+    font-weight: 50;
+    margin-bottom: 0%;
+    text-align: left;
+}
+
+#header_stencil_signature {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 4.7rem;
+    color: black;
+    background-color: white;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: 20;
+}
+
+#header_stencil_borders {
+    width: 40%;
+    margin-left: 4rem;
+    margin-top: -3.8rem;
+}
+
+#header_stencil_borders > * {
+    width: 2rem;
+}
+
+#header_stencil_border1 {
+    border: solid darkturquoise;
+    border-width: 0rem 0.1rem 0.5rem 0rem;
+    border-radius: 0% 100% 100% 50%;
+    padding: 1rem;
+    margin-bottom: -3.5rem;
+    box-shadow: -2rem -2rem -2rem -2rem black;
+}
+
+#header_stencil_border2 {
+    border: solid fuchsia;
+    border-width: 0rem 0.1rem 0.5rem 0rem;
+    border-radius: 0% 80% 100% 50%;
+    padding: 1rem;
+    margin-bottom: -3.5rem;
+    transform: rotate(-15deg);
+}
+
+#header_stencil_border3 {
+    border: solid darkviolet;
+    border-width: 0rem 0.1rem 0.5rem 0rem;
+    border-radius: 0% 50% 100% 50%;
+    padding: 1rem;
+    transform: rotate(-28deg);
+}
+
+/*
+END CUSTOM HEADER STENCIL SECTION
+*/
 
 #mainContainer {
     border-radius: 20px;
@@ -33,7 +101,7 @@ header > h2 {
     border-radius: 20px;
     width: 100%;
     height: 49.5%;
-    background-color: #4F6D7A;
+    background-color: #4f6d7a;
 }
 
 #loadContactsHome:hover {
@@ -48,7 +116,7 @@ header > h2 {
     border-radius: 20px;
     width: 100%;
     height: 49.5%;
-    background-color: #4F6D7A;
+    background-color: #4f6d7a;
 }
 
 #addContactHome:hover {
@@ -61,10 +129,10 @@ header > h2 {
     border: 5px solid #a8dadc;
     border-radius: 20px;
     margin: auto;
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
     width: 100%;
     height: 100%;
-    background-color: #4F6D7A;
+    background-color: #4f6d7a;
     font-size: large;
     display: none;
 }
@@ -77,17 +145,17 @@ header > h2 {
 
 #manager > fieldset > legend {
     border-radius: 20px;
-    padding: .3rem;
+    padding: 0.3rem;
     margin-bottom: 1rem;
-    background-color: #4F6D7A;
-    color: #a8dadF;
+    background-color: #4f6d7a;
+    color: #a8dadf;
 }
 
 .inputLabels {
-    border: 2px solid #a8dadF;
+    border: 2px solid #a8dadf;
     border-radius: 10px 10px 0px 0px;
-    padding: .2rem 1rem .2rem 1rem;
-    color: #a8dadF;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    color: #a8dadf;
 }
 
 .inputs {
@@ -100,7 +168,7 @@ header > h2 {
     margin-bottom: 1rem;
     border: 5px solid #166088;
     border-radius: 20px;
-    background-color: #a8dadF;
+    background-color: #a8dadf;
     width: 50%;
     height: 4rem;
     opacity: 0;
@@ -108,8 +176,8 @@ header > h2 {
 
 #addContactButton:hover {
     background-color: #166088;
-    color: white; 
-    cursor: pointer;  
+    color: white;
+    cursor: pointer;
 }
 
 #newContactConfirm {
@@ -118,7 +186,7 @@ header > h2 {
     margin-top: 0;
     margin-bottom: 0;
     width: 60%;
-    background-color: #a8dadF;
+    background-color: #a8dadf;
     text-align: center;
     opacity: 0;
 }
@@ -130,13 +198,13 @@ header > h2 {
     margin-top: 2rem;
     width: 50%;
     height: 4rem;
-    background-color: #a8dadF;
+    background-color: #a8dadf;
     display: block;
 }
 
 #contactListButton:hover {
     background-color: #166088;
-    color: white;   
+    color: white;
     cursor: pointer;
 }
 
@@ -146,7 +214,7 @@ header > h2 {
     border-radius: 10px 10px 0px 0px;
     width: 100%;
     height: 100%;
-    background-color: #4F6D7A;
+    background-color: #4f6d7a;
     display: none;
 }
 
@@ -154,17 +222,17 @@ header > h2 {
     border-bottom: 2px solid #a8dadc;
     display: flex;
     flex-flow: column;
-    min-height: 38%; 
+    min-height: 38%;
 }
 
 #listHeaderTitle {
-    border: 2px solid #a8dadF;
+    border: 2px solid #a8dadf;
     margin: auto;
     margin-top: 0;
     width: 70%;
     height: 2.5rem;
     text-align: center;
-    color: #a8dadF;
+    color: #a8dadf;
 }
 
 #listHeaderButtonDiv {
@@ -178,12 +246,12 @@ header > h2 {
     border: 5px solid #166088;
     border-radius: 20px;
     width: 49%;
-    background-color: #a8dadF;
+    background-color: #a8dadf;
 }
 
 #loadButtonList:hover {
     background-color: #166088;
-    color: white;   
+    color: white;
     cursor: pointer;
 }
 
@@ -191,17 +259,17 @@ header > h2 {
     border: 5px solid #166088;
     border-radius: 20px;
     width: 49%;
-    background-color: #a8dadF;
+    background-color: #a8dadf;
 }
 
 #addContactButtonList:hover {
     background-color: #166088;
-    color: white;   
+    color: white;
     cursor: pointer;
 }
 
 #searchInput {
-    width: 70%
+    width: 70%;
 }
 
 #searchInputLabel {
@@ -217,7 +285,7 @@ header > h2 {
     border: 2px solid #a8dadc;
     border-radius: 20px;
     margin-left: 35%;
-    margin-bottom: .2rem;
+    margin-bottom: 0.2rem;
     width: 30%;
     color: #a8dadc;
     text-align: center;
@@ -233,7 +301,7 @@ header > h2 {
     border: 2px solid #a8dadc;
     border-radius: 20px;
     width: 31%;
-    background-color: #4F6D7A;
+    background-color: #4f6d7a;
     color: #a8dadc;
     cursor: pointer;
 }
@@ -242,7 +310,7 @@ header > h2 {
     border: 2px solid #a8dadc;
     border-radius: 20px;
     width: 31%;
-    background-color: #4F6D7A;
+    background-color: #4f6d7a;
     color: #a8dadc;
     cursor: pointer;
 }
@@ -251,7 +319,7 @@ header > h2 {
     border: 2px solid #a8dadc;
     border-radius: 20px;
     width: 31%;
-    background-color: #4F6D7A;
+    background-color: #4f6d7a;
     color: #a8dadc;
     cursor: pointer;
 }
@@ -271,7 +339,7 @@ li {
 }
 
 li > input {
-    margin-top: .3rem;
+    margin-top: 0.3rem;
     display: block;
 }
 
@@ -280,13 +348,13 @@ li > button {
     border-radius: 20px;
     margin-left: 70%;
     width: 20%;
-    background-color: #a8dadF;
+    background-color: #a8dadf;
     cursor: pointer;
 }
 
 li > button:hover {
     background-color: #166088;
-    color: white;   
+    color: white;
 }
 
 #contactList > button {
@@ -294,14 +362,14 @@ li > button:hover {
     border-top: 0;
     border-radius: 0px 0px 20px 20px;
     margin-top: 0;
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
     margin-left: 6.3%;
     width: 40%;
-    background-color: #a8dadF;
+    background-color: #a8dadf;
 }
 
 #contactList > button:hover {
     background-color: #166088;
-    color: white;   
+    color: white;
     cursor: pointer;
 }
